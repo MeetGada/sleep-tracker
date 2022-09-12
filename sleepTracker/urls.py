@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-# from rest_framework.urls import
 from rest_framework.authtoken.views import obtain_auth_token
 from user.views import *
 
@@ -25,9 +24,5 @@ urlpatterns = [
     path('login/', obtain_auth_token, name='login'),
     path('storeSleep/', storeSleep.as_view(), name='storeSleep'),
     path('getSleep/<int:pk>', getSleep.as_view(), name='getSleep'),
-    path('calculate/<str:ss>/<str:se>/', calculate, name='calculate'),
     path('logout/', logoutUser.as_view(), name='userLogout'),
 ]
-
-# 2022-09-12T16:59
-# YYYY-MM-DD HH:MM
