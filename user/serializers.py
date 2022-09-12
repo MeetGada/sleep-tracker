@@ -46,6 +46,5 @@ class newSleepSerializer(serializers.ModelSerializer):
         return sleep
 
     def get_user_details(self, item):
-        # print(f"first_name:- {item.user.first_name}")
         user_details = f'{item.user.first_name} {item.user.last_name}'
         return user_details

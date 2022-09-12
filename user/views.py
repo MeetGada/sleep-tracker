@@ -1,5 +1,4 @@
-from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
-from django.http import JsonResponse
+from rest_framework.permissions import IsAuthenticated
 from .serializers import *
 from .models import uSleep
 from rest_framework.response import Response
